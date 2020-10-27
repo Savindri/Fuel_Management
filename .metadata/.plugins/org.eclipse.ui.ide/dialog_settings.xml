@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\SLIIT\Y2\Y2S1\Y2S1\IT2030 Object Oriented Programming\1.1oop project\Vehicle Service And Fuel Station Management System\oop project launched folder\Vehicle Service and Fuel Management System\fuelManagement"/>
+			<item value="D:\SLIIT\Y2\Y2S1\Y2S1\IT2030 Object Oriented Programming\1.1oop project\Vehicle Service And Fuel Station Management System\oop project launched folder\Vehicle Service and Fuel Management System"/>
+		</list>
+	</section>
+</section>

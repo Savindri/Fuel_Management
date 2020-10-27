@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Querys>
+
+	<!-- Create table fuel Query -->
+	<query id="create_fuel_table">
+        <![CDATA[
+            CREATE TABLE fuel(
+            	date date not null,
+				tankID varchar(20) not null,
+				fuelName varchar(45) DEFAULT 'Petrol 92 Octane',
+				tankCapacity Double,
+				fuelUsage Double,
+
+				primary key (tankID)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE FUEL Query -->
+	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS fuel 
+        ]]>
+	</query>
+
+	<!-- Select all fuels Query -->
+	<query id="insert_fuel">
+        <![CDATA[
+          	insert into fuel(date, tankID, fuelName, tankCapacity, fuelUsage, remaining)  
+          	values(?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular fuel by tank id Query -->
+	<query id="fuel_by_tank_id">
+         <![CDATA[        
+            select * 
+            from fuel 
+            where fuel.tankID = ?
+        ]]>
+	</query>
+
+	<!-- Select all fuels -->
+	<query id="all_fuel">
+         <![CDATA[        
+            select * 
+            from fuel
+            order by date
+        ]]>
+	</query>
+
+	<!-- Delete a particular fuel by tank id Query -->
+	<query id="remove_fuel">
+         <![CDATA[        
+            delete from fuel 
+            where fuel.tankID = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular fuel by tank id Query -->
+	<query id="update_fuel">
+         <![CDATA[        
+            update fuel as f
+            set f.date = ?, f.fuelName = ?, f.tankCapacity = ?, f.fuelUsage = ?, f.remaining = ?
+            where f.tankID = ?
+        ]]>
+	</query>
+	
+		<!-- Get tank IDs Query -->
+	<query id="tank_ids">
+         <![CDATA[        
+            select f.tankID 
+            from fuel as f
+        ]]>
+	</query>
+
+</Querys>
